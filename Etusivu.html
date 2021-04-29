@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Carmen & Hugo</title>
 </head>
 <body>
 
-<!-- Kartta elementti -->
-<div class="border" id="map"></div>
+<header id="navigation">
+    <!--Navigaatio-->
+    <div class="logo">Carmen & Hugo</div>
+    <nav>
+        <ul class="links">
+            <li onclick="myFunction()"><a href="#story">Meidän tarina</a></li>
+            <li onclick="myFunction()"><a href="#info">Info</a></li>
+            <li onclick="myFunction()"><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </nav>
+    <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+</header>
 
-<!-- Sää elementti -->
-<a class="weatherwidget-io border" href="https://forecast7.com/en/60d1724d94/helsinki/" data-label_1="HELSINKI" data-label_2="WEATHER" data-font="Jura" data-theme="weather_one" >HELSINKI WEATHER</a>
+<main>
+    <!--Tietoa hääparista-->
+    <div class="story-area" id="story">
+        <div class="text-area">
+            <h1>Meidän tarina</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+                deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
+                fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
+                eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
+                officia tempore accusantium quidem totam obcaecati. Illo, id perspiciatis cupiditate nulla iure ea
+                assumenda quidem debitis, expedita facilis repellendus. Quibusdam nihil nulla, veritatis dignissimos
+                repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
+            </p>
+        </div>
+    </div>
+
+    <!--Tietoa juhlapaikasta yms.-->
+    <div class="info-area" id="info">
+        <div class="text-area">
+            <h1>Mitä, missä, milloin?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+                deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
+                fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
+                eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
+                officia tempore accusantium quidem totam obcaecati. Illo, id perspiciatis cupiditate nulla iure ea
+                assumenda quidem debitis, expedita facilis repellendus. Quibusdam nihil nulla, veritatis dignissimos
+                repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
+            </p>
+        </div>
+    </div>
+
+    <!--Häihin ilmoittautumislomake-->
+    <div class="rsvp-area" id="rsvp">
+        <div class="text-area">
+            <h1>RSVP</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+                deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
+                fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
+                eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
+                officia tempore accusantium quidem totam obcaecati. Illo, id perspiciatis cupiditate nulla iure ea
+                assumenda quidem debitis, expedita facilis repellendus. Quibusdam nihil nulla, veritatis dignissimos
+                repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Kartta elementti -->
+    <div class="border" id="map"></div>
+
+    <!-- Sää elementti -->
+    <a class="weatherwidget-io border" href="https://forecast7.com/en/60d1724d94/helsinki/" data-label_1="HELSINKI" data-label_2="WEATHER" data-font="Jura" data-theme="weather_one" >HELSINKI WEATHER</a>
+
+</main>
 
 <script src="js/jsKoodi1.js"></script>
+
+<!--Navigaation animointi-->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/jsNaviAnimaatio.js"></script>
 
 <!-- Kartta API-->
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwu2cMWYZyWXk2Pk3sBkykT4VTT182DdI&callback=initMap"></script>
