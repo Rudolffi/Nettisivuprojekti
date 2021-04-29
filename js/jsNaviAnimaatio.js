@@ -1,30 +1,45 @@
 'use strict';
 
-//Hampurilaismenusta klikatessa valikko tulee näkyviin vasemmalta
-$(document).ready(function(){
-  $('.menu').click(function(){
-    $('nav').toggleClass('active')
-  })
-});
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu-links");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+const storyLink = document.getElementById("storyLink");
+const infoLink = document.getElementById("infoLink");
+const rsvpLink = document.getElementById("rsvpLink");
 
-$('nav a').click(function(){
-  $("nav").toggleClass('hide');
-});
+menuBtn.onclick = ()=>{
+  menu.classList.add("active");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabledScroll");
+}
+
+cancelBtn.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+}
+
+storyLink.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+}
+
+infoLink.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+}
+
+rsvpLink.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+}
 
 
-
-// Käyttäjän selatessa sivua funktio aktivoituu
-window.onscroll = function() {myFunction()};
-
-const navbar = document.getElementById("navigation");
-
-let sticky = navbar.offsetTop;
-
-//Funktio, jotta navigaatio saadaan pysymään koko ajan sivun yläreunassa
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
