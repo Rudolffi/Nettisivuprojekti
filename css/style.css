@@ -137,7 +137,8 @@ h1 {
     }
 
     .navbar .menu-links li {
-        margin-top: 45px;
+        margin-top: 15px;
+        padding: 15px;
     }
 
     .navbar .menu-links li a {
