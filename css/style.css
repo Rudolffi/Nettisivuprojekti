@@ -100,6 +100,16 @@ h1 {
     font-size: 35px;
 }
 
+h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.indent {
+    padding-left: 10px;
+}
+
 .content p {
     padding-top: 20px;
     text-align: justify;
@@ -176,6 +186,9 @@ h1 {
 }
 
 @media (max-width: 415px) {
+    .picture {
+        width: 100%;
+    }
 
     body.disabledScroll {
         overflow: hidden;
@@ -201,6 +214,10 @@ h1 {
 
     h1 {
         font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 
     .content p {

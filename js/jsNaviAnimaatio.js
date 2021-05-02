@@ -8,6 +8,8 @@ const cancelBtn = document.querySelector(".cancel-btn");
 const storyLink = document.getElementById("storyLink");
 const infoLink = document.getElementById("infoLink");
 const rsvpLink = document.getElementById("rsvpLink");
+const contactLink = document.getElementById("contactLink");
+
 
 menuBtn.onclick = ()=>{
   menu.classList.add("active");
@@ -34,6 +36,12 @@ infoLink.onclick = ()=>{
 }
 
 rsvpLink.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+}
+
+contactLink.onclick = ()=>{
   menu.classList.remove("active");
   menuBtn.classList.remove("hide");
   body.classList.remove("disabledScroll");
