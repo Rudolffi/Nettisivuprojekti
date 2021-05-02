@@ -67,12 +67,14 @@ html {
 }
 
 .banner {
-    height: 100vh;
+    width: 100%;
+    height: auto;
     /*background-color: cadetblue;*/
-    background-image: url(../media/img/sormukset_1500px.jpg);
+    /*background-image: url(../media/img/sormukset_1500px.jpg);*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
 }
 
 .story-area, .info-area, .rsvp-area {
@@ -105,7 +107,22 @@ h1 {
 
 }
 
-@media (max-width: 868px) {
+#map {
+    height: 500px;
+    width: 500px;
+    z-index: 1;
+}
+
+.weatherwidget-io {
+    width: 300px;
+    margin: 10px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+@media (max-width: 850px) {
     body.disabledScroll {
         overflow: hidden;
     }
@@ -146,17 +163,45 @@ h1 {
     }
 }
 
-#map {
-    height: 500px;
-    width: 500px;
-    z-index: 1;
+@media (max-width: 415px) {
+
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .navbar .menu-links li a {
+        font-size: 18px;
+    }
+
+    .navbar .logo {
+        color: black;
+        font-size: 24px;
+    }
+
+    .navbar .menu-links {
+        max-width: 300px;
+    }
+
+    .story-area, .info-area, .rsvp-area {
+        padding: 10px 0;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 18px;
+
+    }
+
+    #map {
+        height: 250px;
+        width: 250px;
+        z-index: 1;
+    }
+
 }
 
-.weatherwidget-io {
-    width: 300px;
-    margin: 10px;
-}
 
-.border {
-    border: 1px solid black;
-}
