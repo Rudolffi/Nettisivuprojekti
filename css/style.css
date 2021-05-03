@@ -181,6 +181,19 @@ h2 {
     padding: 15px;
 }
 
+/* sannan rsvp*/
+.ilmoittautuminen{
+    text-align: center;
+}
+.input-box{
+    border-bottom: 1px solid slategray;
+   }
+.input-box input{
+    width: 80%;
+    border: none;
+    outline: none;
+    text-align: center;
+}
 
 @media (max-width: 850px) {
     body.disabledScroll {
