@@ -155,7 +155,7 @@ h2 {
 
 #map {
     height: 500px;
-    width: 500px;
+    width: 87%;
     z-index: 1;
 }
 
@@ -163,7 +163,7 @@ h2 {
     width: 90%;
     text-align: center;
     position: absolute;
-    left: 25px;
+    left: 40px;
 }
 
 .border {
