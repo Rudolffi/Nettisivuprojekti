@@ -25,7 +25,7 @@
                 <li id="storyLink"><a href="#story">Meidän tarina</a></li>
                 <li id="infoLink"><a href="#info">Hääinfo</a></li>
                 <li id="rsvpLink"><a href="#rsvp">RSVP</a></li>
-                <li id="contactLink"><a href="#rsvp">Yhteystiedot</a></li>
+                <li id="contactLink"><a href="#contact">Yhteystiedot</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -36,13 +36,22 @@
 
 
 
-    <div class="bannerf"><img class="banner" src="media/img/sormukset_1500px.jpg" alt="Kuva sormuksista"></div>
+    <div>
+        <!--<img class="banner" src="media/img/sormukset_1500px.jpg" alt="Kuva sormuksista">-->
+        <video id="bannerVideo" width="320" height="240" controls autoplay muted loop>
+            <source src="media/video/bannervideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!--Nappula, jolla pääsee takaisin sivun yläreunaan-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="media/img/upup.png" alt="Nappi, jolla pääsee sivun yläreunaan"></button>
 
     <!--Tietoa hääparista-->
     <div class="story-area" id="story">
         <div class="content">
             <h1>Meidän tarina</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -59,7 +68,7 @@
     <div class="info-area" id="info">
         <div class="content">
             <h1>Mitä, missä, milloin?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -68,14 +77,17 @@
                 repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
             </p>
 
-            <h2>Vihkiminen</h2>
-            <p class="indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="centerInfo">
+                <h2>Vihkiminen</h2>
+                <p class="indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-            <h2>Juhlapaikka</h2>
-            <p class="indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>Juhlapaikka</h2>
+                <p class="indent">Seurasaari, 00250 Helsinki</p>
+                <p class="indent">Saapumisohjeet kartalla.</p>
 
-            <h2>Häälahjatoive</h2>
-            <p class="indent">Paljon leluja ja puruluita.</p>
+                <h2>Häälahjatoive</h2>
+                <p class="indent">Paljon leluja ja puruluita.</p>
+            </div>
 
 
             <!-- Kartta elementti -->
@@ -88,7 +100,7 @@
     <div class="rsvp-area" id="rsvp">
         <div class="content">
             <h1>RSVP</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -97,7 +109,7 @@
                 repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
             </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -106,7 +118,7 @@
                 repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
             </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -115,7 +127,7 @@
                 repellat, veniam porro consequatur culpa reiciendis eveniet maxime quas dolores atque delectus?
             </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
+            <p class="textNormal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
                 deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
                 fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
                 eveniet cum eaque? Eveniet sint, cum minus rerum earum amet doloribus suscipit reprehenderit, hic
@@ -130,11 +142,7 @@
     <div class="contact-area" id="contact">
         <div class="content">
             <h1>Yhteystiedot</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae minus maxime ratione
-                deleniti ad sint voluptatibus eligendi error eaque, repudiandae dolor reprehenderit ipsa at molestias
-                fuga porro voluptatum amet? Dicta itaque, illo magnam inventore libero sed sunt incidunt aperiam
-                eveniet cum eaque?
-            </p>
+            <p id="contactInfo">hugolovescarmen@hauhau.com</p>
         </div>
     </div>
 
@@ -147,6 +155,9 @@
     <script src="js/jsKoodi1.js"></script>
 
 </main>
+
+
+
 
 <!--Navigaation animointi-->
 <script src="js/jsNaviAnimaatio.js"></script>
