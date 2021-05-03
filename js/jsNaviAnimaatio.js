@@ -64,9 +64,9 @@ window.onscroll = ()=>{
 //Haetaan nappula
 const mybutton = document.getElementById("myBtn");
 
-//Nappula tulee näkyviin, kun skrollataan 500px alaspäin
+//Nappula tulee näkyviin, kun skrollataan 700px alaspäin
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
