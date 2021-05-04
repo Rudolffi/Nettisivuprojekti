@@ -141,18 +141,14 @@
 
         <form class="ilmoittautuminen">
         <!-- sannan rsvp-->
-            <label for="enimi">Etunimi:</label><br>
+            <label for="pwd">Syöttäkää kutsussanne löytyvä salasana:</label><br>
             <div class="input-box">
-                <input type="text" id="enimi" name="enimi"><br>
+                <input type="text" id="pwd" name="password"><br>
             </div>
-            <label for="snimi">Sukunimi:</label><br>
-            <div class="input-box">
-                <input type="text" id="snimi" name="snimi">
-            </div>
-            <label for="msg">Viesti:</label><br>
-            <div class="input-box">
-                <input type="text" id="msg" name="msg">
-            </div>
+            <button type="button" id="pwdbtn">Enter</button>
+
+            <artcile id="kutsuttujen_nimet"></artcile>
+
         </form>
         </div>
     </div>
@@ -181,7 +177,7 @@
 <script src="js/jsNaviAnimaatio.js"></script>
 
 <!-- RSVP scripti -->
-
+<script src="js/rsvp.js"></script>
 
 </body>
 </html>
