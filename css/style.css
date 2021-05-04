@@ -192,12 +192,12 @@ h2 {
 
 #map {
     height: 500px;
-    width: 70%;
+    width: 55%;
     z-index: 1;
 }
 
 .weatherwidget-io {
-    width: 70%;
+    width: 55%;
 }
 
 .border {
