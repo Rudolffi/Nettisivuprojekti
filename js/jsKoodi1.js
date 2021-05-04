@@ -1,13 +1,5 @@
 'use strict';
 
-
-// Asetukset paikkatiedon hakua varten (valinnainen)
-const options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-};
-
 // Funktio, joka ajetaan, kun paikkatiedot on haettu
 function success(pos) {
     const crd = pos.coords;
