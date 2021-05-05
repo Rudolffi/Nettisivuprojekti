@@ -9,14 +9,14 @@ const pwdbtn = document.getElementById('pwdbtn'); // pwd nappi
 const rbs = document.querySelectorAll('input[name="attend"]'); // radionapit nipussa
 const rbbtn = document.getElementById('rbbtn'); // radionappien enternappi
 const rbdiv = document.getElementById('radionapit');
-rbdiv.style.display = "none"; // rbt tulevat myöhemmin näkyviin
+rbdiv.style.display = "none"; // rbt piiloon sivun latautuessa (tulevat myöhemmin näkyviin)
 
 //SPOSTILOMAKKEEN MUUTTUJAT
 const mailForm = document.getElementById('sposti'); //sähköpostilomake
 const msgname = document.getElementById('msgfrom'); // sähköpostikenttä
 const msgSub = document.getElementById('spostiOtsikko'); // sähköpostin otsikkokenttä
 const msgSubStrt = 'RSVP! : ';  // listätään myöhemmin sähköpostin otsikkokenttään
-mailForm.style.display = "none";  //sähköpostilomake piiloon sivun latautuessa (tulee esille myöhemmin)
+mailForm.style.display = "none";  //sähköpostilomake piiloon sivun latautuessa (tulee myöhemmin näkyviin)
 
 //TIETOJEN HAKU API:STA -SKRIPTI
 
@@ -32,8 +32,8 @@ function teeHaku(apiurl) {
   fetch(apiurl).then(function(response){
     return response.json();
   }).then(function(json) {
-    naytaVastaus(json);				// siirrytään varsinaisen datan käsittelyyn.
-  })};
+    naytaVastaus(json);	// siirrytään varsinaisen datan käsittelyyn.
+  })}
 
 function naytaVastaus(jsonData) {
 kn_article.innerHTML=``;
@@ -65,8 +65,8 @@ kn_article.innerHTML=``;
 }
 function jatka(){
   typepwd.style.display = "none"; // piiloitetaan typepwd
-  pwdbtn.style.display = "none"; // piiloitetaan pwdbtn
-  rbdiv.style.display = "block"; // rd-napit näkyviin
+  pwdbtn.style.display = "none";  // piiloitetaan pwdbtn
+  rbdiv.style.display = "block";  // rd-napit näkyviin
 }
 
 // RADIONAPPEIN SKRIPTI
