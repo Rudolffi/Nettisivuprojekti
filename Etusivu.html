@@ -137,11 +137,21 @@
 
             <h1>RSVP</h1>
 
-            <input type="text" id="typepwd" name="password">
+            <input type="text" id="typepwd" name="password" placeholder="Kutsustanne löytyvä salasana">
             <br><br>
             <button type="button" id="pwdbtn">Enter</button>
 
         <artcile id="kutsuttujen_nimet"></artcile>
+
+        <form id="sposti" action="https://formsubmit.co/sanna.kukkonen2@metropolia.fi" method="POST">
+            <input type="hidden" id="msgfrom" name="salasana">
+            <label for="msg">Kirjoittakaa viestikenttään mahdollisista ruokarajoitteistanne</label><br>
+            <input type="text" id="msg" name="msg" placeholder="Viesti" required>
+
+            <input id="spostiOtsikko" type="hidden" name="_subject" value="">
+
+            <button type="submit">Lähetä</button>
+        </form>
 
     </div>
 

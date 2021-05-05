@@ -8,6 +8,13 @@ const kn_article = document.getElementById('kutsuttujen_nimet');
 const typepwd = document.getElementById('typepwd'); // tekstikenttä, johon salasana syötetään
 const pwdbtn = document.getElementById('pwdbtn'); // pwd nappi
 
+const mailForm = document.getElementById('sposti');
+mailForm.style.display = "none";
+
+const msgname = document.getElementById('msgfrom');
+const msgSub = document.getElementById('spostiOtsikko');
+const msgSubStrt = 'RSVP! s-sana: ';
+
 function pwdSubmit(e) {
   console.log('painoitnappia');
   e.preventDefault();
@@ -24,9 +31,14 @@ function teeHaku(apiurl) {
     naytaVastaus(json);				// siirrytään varsinaisen datan käsittelyyn.
   })};
 
+
+
 function naytaVastaus(jsonData) {
 kn_article.innerHTML=``;
-  let salasana = typepwd.value;
+  const salasana = typepwd.value;
+  msgname.value = typepwd.value;
+  msgSub.value = msgSubStrt + typepwd.value;
+
   for (let i = 0; i < jsonData.length; i++) {
     if (jsonData[i].password === salasana) {
       try {
@@ -49,6 +61,11 @@ kn_article.innerHTML=``;
   }
   typepwd.style.display = "none"; // piiloitetaan typepwd
   pwdbtn.style.display = "none"; // piiloitetaan pwdbtn
+
+  mailForm.style.display = "block";
 }
+
+
+
 
 
