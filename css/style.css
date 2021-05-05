@@ -106,7 +106,7 @@ html {
     margin-top: 30px;
 }
 
-.story-area, .info-area, .rsvp-area {
+.story-area, .info-area, .rsvp-area, .contact-area {
     padding: 40px 0;
     margin: auto;
 }
@@ -131,7 +131,7 @@ html {
     padding: 20px;
 }
 
-.testi {
+.infoCenter {
     text-align: center;
     margin: auto;
 }
@@ -201,7 +201,9 @@ h2 {
 }
 
 .border {
-    border: 1px solid black;
+    border: 5px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(182, 182, 182);
 }
 
 #myBtn {
@@ -215,6 +217,32 @@ h2 {
     cursor: pointer;
     background-color: transparent;
     padding: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+}
+
+#useHash {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#hashtag {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #797979;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
 /* sannan rsvp*/
@@ -232,6 +260,10 @@ h2 {
 }*/
 
 @media (max-width: 1000px) {
+    #bannerVideo {
+        margin-top: 40px;
+    }
+
     body.disabledScroll {
         overflow: hidden;
     }
@@ -270,9 +302,35 @@ h2 {
     .navbar .menu-links li a {
         font-size: 20px;
     }
+
+    .float-container {
+        padding: 20px;
+    }
+
+    .float-child {
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .centerInfo {
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 415px) {
+    #myBtn {
+        padding: 5px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #bannerVideo {
+        margin-top: 100px;
+    }
+
     .picture {
         width: 100%;
     }
@@ -294,9 +352,25 @@ h2 {
         max-width: 300px;
     }
 
-    .story-area, .info-area, .rsvp-area {
+    .story-area, .info-area, .rsvp-area, .contact-area {
         padding: 40px 0;
         margin: auto;
+    }
+
+    .float-container {
+        padding: 10px;
+    }
+
+    .float-child {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .centerInfo {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
     }
 
     h1 {
