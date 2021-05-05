@@ -1,6 +1,5 @@
 'use strict';
 
-
 // Asetukset paikkatiedon hakua varten (valinnainen)
 const options = {
     enableHighAccuracy: true,
@@ -18,12 +17,12 @@ function success(pos) {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    // Markkeri karttaan (Kirkko)
+    // Asetetaan markkeri karttaan (Kirkko)
     L.marker([60.172951, 24.925228]).addTo(map)
         .bindPopup('Kirkko <br><br> Lutherinkatu 3, <br> 00100 Helsinki')
         .openPopup();
 
-    // Markkeri karttaan (Juhlapaikka)
+    // Asetetaan Markkeri karttaan (Juhlapaikka)
     L.marker([60.181082, 24.883377]).addTo(map)
         .bindPopup('Juhlapaikka <br><br> Seurasaari, <br> 00250 Helsinki')
         .openPopup();
