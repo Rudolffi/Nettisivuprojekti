@@ -321,6 +321,11 @@ footer {
 }
 
 @media (max-width: 415px) {
+    #myBtn {
+        padding: 5px;
+        bottom: 10px;
+        right: 10px;
+    }
 
     #bannerVideo {
         margin-top: 100px;
