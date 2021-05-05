@@ -261,7 +261,7 @@ footer {
 
 @media (max-width: 1000px) {
     #bannerVideo {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     body.disabledScroll {
