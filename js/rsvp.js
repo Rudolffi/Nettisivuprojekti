@@ -10,8 +10,32 @@ const pwdbtn = document.getElementById('pwdbtn');
 const pwdspace = document.getElementById('pwd');
 const kn_article = document.getElementById('kutsuttujen_nimet');
 
+const rsvpform = document.getElementById('form');
 
+function pwdSubmit(event) {
+  event.preventDefault();
+  apiKysely = apiurl;
+
+  kn_article.innerHTML= ``; //Tyhjennetään mainElementti ennen jokaista uutta tulostusta
+
+  /*teeHaku(apiKysely);
+
+   */
+}
+rsvpform.addEventListener('submit', pwdSubmit());
+
+/*
 pwdbtn.addEventListener('click', teeKysely);
+
+pwdspace.addEventListener('onkeyup', function(event) {
+  if(event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("pwdbtn").click();
+  }
+});
+*/
+
+
 
 console.log('nappia on painettu');
 

@@ -218,7 +218,7 @@ h2 {
 }
 
 /* sannan rsvp*/
-.ilmoittautuminen{
+/*.ilmoittautuminen{
     text-align: center;
 }
 .input-box{
@@ -229,7 +229,7 @@ h2 {
     border: none;
     outline: none;
     text-align: center;
-}
+}*/
 
 @media (max-width: 1000px) {
     body.disabledScroll {
