@@ -238,6 +238,16 @@ footer {
     font-size: 12px;
 }
 
+#esitelma {
+    color: #f6bbc2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#esitelma:visited {
+    color: #bb8f95;
+}
+
 /* RSVP */
 .rsvp-area{
     text-align: center;

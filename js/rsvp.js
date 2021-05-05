@@ -1,3 +1,4 @@
+'use strict';
 
 //API-HAUN MUUTTUJAT
 const apiurl = 'https://ryhmac.herokuapp.com/guests'; // APIn url
