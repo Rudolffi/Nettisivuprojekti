@@ -137,37 +137,39 @@
 
     <!--Häihin ilmoittautumislomake-->
     <div class="rsvp-area" id="rsvp">
-        <div class="content">
+
             <h1>RSVP</h1>
-            <p class="indent">Mikäli teillä on ruokarajoituksia, kirjoitattehan ne viestikenttään.
-            </p><br>
 
             <input type="text" id="typepwd" name="password" placeholder="Kutsustanne löytyvä salasana">
             <br><br>
-            <button type="button" id="pwdbtn">Enter</button>
+            <button type="button" id="pwdbtn" class="rsvp-nappi">Enter</button>
 
         <artcile id="kutsuttujen_nimet"></artcile>
 
             <div id="radionapit">
-                <input type="radio" id="yesradio" name="attend" value="TULOSSA"
+                <div class="rb-tyylitys">
+                    <input type="radio" id="yesradio" class="rb-nappi" name="attend" value="TULOSSA"
                        checked>
-                <label for="yesradio">Tulossa</label>
-
-                <input type="radio" id="noradio" name="attend" value="EI TULOSSA">
-                <label for="noradio">Ei tulossa</label>
-                <button type="button" id="rbbtn">Enter</button>
+                    <label for="yesradio">Tulossa</label>
+                </div>
+                <div class="rb-tyylitys">
+                    <input type="radio" id="noradio" class="rb-nappi" name="attend" value="EI TULOSSA">
+                    <label for="noradio">Ei tulossa</label>
+                </div>
+                <button type="button" id="rbbtn" class="rsvp-nappi">Enter</button>
             </div>
 
         <form id="sposti" action="https://formsubmit.co/sanna.kukkonen2@metropolia.fi" method="POST">
+            <p class="indent">Mikäli teillä on ruokarajoituksia, kirjoitattehan ne viestikenttään.
+            </p><br>
             <input type="hidden" id="msgfrom" name="salasana">
-            <label for="msg">Kirjoittakaa viestikenttään mahdollisista ruokarajoitteistanne</label><br>
+            <div>
             <input type="text" id="msg" name="msg" placeholder="Viesti" required>
-
+            </div>
             <input id="spostiOtsikko" type="hidden" name="_subject" value="">
-
-            <button type="submit">Lähetä</button>
+            <button type="submit" id="spostibtn" class="rsvp-nappi">Lähetä</button>
         </form>
-        </div>
+
     </div>
 
     <!--Yhteystiedot-->

@@ -1,6 +1,5 @@
 
 //API-HAUN MUUTTUJAT
-
 const apiurl = 'https://ryhmac.herokuapp.com/guests'; // APIn url
 const kn_article = document.getElementById('kutsuttujen_nimet');
 const typepwd = document.getElementById('typepwd'); // tekstikenttä, johon salasana syötetään
@@ -13,7 +12,6 @@ const rbdiv = document.getElementById('radionapit');
 rbdiv.style.display = "none"; // rbt tulevat myöhemmin näkyviin
 
 //SPOSTILOMAKKEEN MUUTTUJAT
-
 const mailForm = document.getElementById('sposti'); //sähköpostilomake
 const msgname = document.getElementById('msgfrom'); // sähköpostikenttä
 const msgSub = document.getElementById('spostiOtsikko'); // sähköpostin otsikkokenttä
@@ -31,7 +29,6 @@ pwdbtn.addEventListener('click', pwdSubmit);
 
 function teeHaku(apiurl) {
   // suoritetaan hakukysely, fetch hoitaa mahdolliset tietoliikenneongelmat.
-
   fetch(apiurl).then(function(response){
     return response.json();
   }).then(function(json) {
@@ -90,9 +87,3 @@ function rbSubmit(){
 }
 
 rbbtn.addEventListener('click', rbSubmit);
-
-
-
-
-
-

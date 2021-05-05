@@ -245,19 +245,55 @@ footer {
     font-size: 12px;
 }
 
-/* sannan rsvp*/
-/*.ilmoittautuminen{
+/* RSVP */
+.rsvp-area{
     text-align: center;
 }
-.input-box{
-    border-bottom: 1px solid slategray;
-   }
-.input-box input{
+#typepwd{
+    padding: 10px;
     width: 80%;
-    border: none;
     outline: none;
     text-align: center;
-}*/
+    border: none;
+    /* ... mutta jätetään silti alaviiva */
+    border-bottom: 1px solid slategray;
+}
+.rsvp-nappi {
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+}
+.rsvp-nappi:hover{
+    background-color: #f6bbc2;
+    box-shadow: 1px 1px 1px rgb(182, 182, 182);
+    color: white;
+}
+/* 2 alempaa pitäs muokata viel*/
+#radionapit{
+    display: inline-block;
+}
+.rb-tyylitys{
+    padding: 20px;
+    font-size: 20px;
+    margin: 30px;
+}
+#msg{
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid slategray;
+
+}
+#spostibtn{
+    margin: 20px;
+}
+
+/* RSVP-tyylittely päättyy */
 
 @media (max-width: 1000px) {
     #bannerVideo {
@@ -391,7 +427,15 @@ footer {
         width: 250px;
         z-index: 1;
     }
-
+/* RSVP */
+    #radionapit{
+        display: inline-block;
+    }
+    .rb-tyylitys{
+        padding: 20px;
+        font-size: 20px;
+        margin: 30px;
+    }
 }
 
 
